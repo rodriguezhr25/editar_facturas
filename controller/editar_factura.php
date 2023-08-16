@@ -350,7 +350,7 @@ class editar_factura extends fbase_controller
               /*            echo '<script>';
                 echo 'console.log(' . json_encode($numlineas) . ')';
                 echo '</script>';   */
-            $referencia_nueva = $_POST['referencia_' . $num];
+            $referencia_nueva = trim($_POST['referencia_' . $num]);
             if (isset($_POST['idlinea_' . $num])) {
                 foreach ($lineas as $k => $value) {
                     /// modificamos la línea
